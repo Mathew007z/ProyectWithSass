@@ -224,7 +224,7 @@ ul.show {
 .tittle__parrafo {
   font-size: 1.4rem;
   font-weight: bold;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Bree Serif", serif;
   display: flex;
   flex-wrap: wrap;
 }
@@ -621,7 +621,7 @@ ul.show {
   }
   .tittle__tres {
     margin: 0;
-    padding: 0 0.5em 0 0;
+    padding: 0 0 0 0;
   }
   .button__galery {
     margin: 0 2em 0 0;
@@ -637,8 +637,9 @@ ul.show {
     padding: 0;
   }
   p.tittle__parrafo {
-    margin: 0;
-    padding: 0 0.5em 0 0;
+    margin: 1em 0 2em 0;
+    padding: 0 0.5em 0 0.5em;
+    font-size: 14px;
   }
 }
 @media screen and (max-width: 858px) and (orientation: landscape) {

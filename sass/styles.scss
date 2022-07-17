@@ -382,7 +382,7 @@ ul.show{
 .tittle__parrafo{
     font-size: $text-small;
     font-weight: $bold;
-    font-family: $font-principal;
+    font-family: $font-nueva;
     @include display(flex);
     @include wrap;
 }
@@ -794,7 +794,7 @@ ul.show{
     
 
     .tittle__tres{
-        @include myp(0 0.5em 0 0, 0);
+        @include myp(0 0 0 0, 0);
     }
 
     .button__galery{
@@ -814,10 +814,14 @@ ul.show{
     }
 
     p.tittle__parrafo{
-        @include myp(0 0.5em 0 0, 0 );
+        @include myp(0 0.5em 0 .5em, 1em 0 2em 0 );
+        font-size: 14px;
+
+
 
     }
 
+    
 
 
 }
