@@ -551,7 +551,8 @@ ul.show{
     @include medidas(auto , 200px );
     @include wrap;
     flex-direction: column;
-    @include fondo(#f3c1f175);
+    @include fondo(#000);
+    @include color(#fff);
 
 }
 
