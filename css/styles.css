@@ -14,6 +14,8 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+/*Comienzo del  nav*/
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -79,6 +81,9 @@ body {
 ul.show {
   top: 65px;
 }
+
+
+/*Comienzo del Main*/
 
 .main {
   width: 100vw;
@@ -165,6 +170,13 @@ ul.show {
   padding-top: 0.5em;
 }
 
+
+/*footer*/
+
+
+
+
+
 .footer {
   width: auto;
   height: 150px;
@@ -195,6 +207,23 @@ ul.show {
 .footer__text i:hover {
   font-size: 2em;
   font-size: "Open Sans", sans-serif;
+}
+
+
+
+/*Seccion Sobre Nosotros*/
+
+
+
+.img__middle {
+  max-width: 300px;
+  display: block;
+}
+
+.middle__section {
+  display: flex;
+  height: auto;
+  background-color: #fff;
 }
 
 .main__sobre {
@@ -271,6 +300,7 @@ ul.show {
   font-family: "Bree Serif", serif;
   display: flex;
   flex-wrap: wrap;
+  width: 350px;
 }
 
 .middle__img {
@@ -281,6 +311,13 @@ ul.show {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+
+/*Servicios Section*/
+
+
+
 
 .main__foot {
   display: grid;
@@ -359,6 +396,15 @@ ul.show {
   height: auto;
 }
 
+
+
+
+/*Contacto Section*/
+
+
+
+
+
 .main__contacto {
   background-image: url(/img/rodolfo-sanches-carvalho-KCqX58pL0TA-unsplash.jpg);
   background-position: center;
@@ -424,6 +470,14 @@ ul.show {
   background-color: #edb3ea;
   border: navajowhite;
 }
+
+
+
+
+/*Galeria Section*/
+
+
+
 
 .main__galeria {
   display: flex;
@@ -545,6 +599,12 @@ ul.show {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+
+/*Media Query*/
+
+
 
 @media screen and (max-width: 952px) {
   .logo {
@@ -697,6 +757,10 @@ ul.show {
   .paragraph__tilt {
     width: auto;
     padding-left: 1em;
+  }
+  .img__middle {
+    max-width: 250px;
+    display: block;
   }
 }
 @media screen and (max-width: 858px) and (orientation: landscape) {

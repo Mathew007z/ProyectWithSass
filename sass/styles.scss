@@ -39,7 +39,7 @@
 
 
 
-//MIXIN
+//MIXINS
 
 @mixin reset {
     *::after,
@@ -329,6 +329,18 @@ ul.show{
 
 //seccion sobre nosotros
 
+.img__middle{
+    max-width: 300px;
+    display: block;
+
+
+}
+
+.middle__section{
+    display: flex;
+    height: auto;
+    @include fondo(#fff);
+}
 
 .main__sobre{
     @include display(grid);
@@ -398,12 +410,14 @@ ul.show{
     @include wrap;
 }
 
+
 .tittle__parrafo{
     font-size: $text-small;
     font-weight: $bold;
     font-family: $font-nueva;
     @include display(flex);
     @include wrap;
+    width: 350px;
 }
 
 .middle__img{
@@ -858,6 +872,13 @@ ul.show{
         padding-left: 1em;
     }
 
+
+    .img__middle{
+        max-width: 250px;
+        display: block;
+    
+    
+    }
 
 }
 
