@@ -686,6 +686,31 @@ ul.show{
 
 
 
+.photo__main{
+    display: flex;
+    align-items: center;
+    @include wrap;
+    justify-content: space-evenly;
+}
+
+
+.paragraph__selfie{
+    max-width: 350px;
+    font-family: $font-nueva;
+    font-size: 18px;
+}
+
+.girl__selfie{
+    width: 350px;
+    display: block;
+    margin-bottom: 2.5em;
+    transition: ease-in-out 0.6s;
+}
+
+.girl__selfie:hover{
+    width: 380px;
+}
+
 
 //MEDIAS QUERY
 
@@ -878,6 +903,18 @@ ul.show{
         display: block;
     
     
+    }
+    .paragraph__selfie{
+        width: 300px;
+        font-family: $font-nueva;
+        font-size: 16px;
+    }
+    
+    .girl__selfie{
+        width: 300px;
+        display: block;
+        margin-bottom: 2.5em;
+        transition: ease-in-out 0.6s;
     }
 
 }
