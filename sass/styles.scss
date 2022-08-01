@@ -7,6 +7,9 @@
  $alternative:#1b3437;
  $text-color:#000;
  $legth-color:#17DFC7;
+ $gradient-1:#FC8DFF;
+ $gradient-2: #F436FA;
+ 
 
 
  // Spacings 
@@ -70,6 +73,8 @@
     height: $h;
 }
 
+
+
 @mixin fondo($background){
     background-color: $background;
 }
@@ -104,23 +109,13 @@ $headings:(
     h3: 2em,
     h4: 13px
 
+
 );
 
-$h1: map-get($headings, h1 );
+$h1:map-get($headings, h1 );
 $h2:map-get($headings, h2 );
 $h3:map-get($headings, h3 );
 $h4:map-get($headings, h4 );
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -147,6 +142,8 @@ body{
 
 
  //nav  
+
+
 
 
 
@@ -243,6 +240,7 @@ ul.show{
     @include myp(1em 0 0 .5em,0);
     @include display(flex);
     @include wrap;
+    
 }
 
 
@@ -272,6 +270,7 @@ ul.show{
 .middle__flex{
     @include display(flex);
     @include wrap;
+    margin-top: 5em
 }
 
 
@@ -449,6 +448,7 @@ ul.show{
     @include wrap;
     width: 350px;
     margin-left: 2em;
+
 }
 
 .middle__img{
@@ -484,7 +484,7 @@ ul.show{
 
 .divider{
     @include medidas(200px,3px);
-    @include fondo(#ffaefb);
+    @include fondo(#ff6cf8);
     @include myp(0, 1em 0 1em 0 );
 }
 
@@ -505,6 +505,7 @@ ul.show{
     grid-template-columns: repeat(4 , 1fr);
     @include fondo(#fff);
     @include medidas(auto, 350px );
+    background-image: linear-gradient($secondary,$gradient-1);
 
 }
 
@@ -569,6 +570,7 @@ ul.show{
     @include display(grid);
     grid-template-columns:  repeat(4 , 1fr);
     @include medidas(auto , 400px );
+    background-image: linear-gradient($secondary,$gradient-1);
 }
 
 .side__article{
@@ -617,6 +619,7 @@ ul.show{
     flex-direction: column;
     @include fondo(#000);
     @include color(#fff);
+    background-image: linear-gradient($secondary,$gradient-1);
 
 }
 
@@ -624,6 +627,7 @@ ul.show{
     font-size: $text-medium;
     font-family: $font-principal;
     font-weight: $bold;
+    color:#000;
 
 }
 
@@ -644,6 +648,8 @@ ul.show{
     gap: 20px;
     @include myp(20px,0 );
     @include fondo(#000);
+    
+    
 }
 
 
@@ -722,6 +728,7 @@ ul.show{
     align-items: center;
     @include wrap;
     justify-content: space-evenly;
+    background-image: linear-gradient($secondary,$gradient-1);
 }
 
 
@@ -883,7 +890,7 @@ ul.show{
     
 
     .tittle__tres{
-        @include myp(0 0 0 0, 0);
+        @include myp(0 0 0 , 0 1em 0 0);
     }
 
     .button__galery{
@@ -904,7 +911,7 @@ ul.show{
 
     p.tittle__parrafo{
         @include myp(0 0.5em 0 .5em, 1em 0 2em 0 );
-        font-size: 14px;
+        font-size: 14px; 
 
 
 
@@ -964,21 +971,41 @@ ul.show{
     }
 
     .main__paragraph{
-        font-size: 12px;
+        font-size: 16px;
         font-weight: $bold;
         font-family: $font-nueva;
         @include color(#000);
         @include display(flex);
         @include wrap;
-        @include myp(0, 0 0 0 0 );
+        @include myp(0, 0 0 0 1em );
     }
     
     h2.main__title{
-        font-size: 16px;
-        height: 40px;
-        width: 210px;
+        font-size: 20px;
+        height: 60px;
+        width: 250px;
         padding-bottom: 3em;
         
+    }
+    .divider{
+        @include medidas(200px,3px);
+        @include fondo(#ff6cf8);
+        @include myp(0, 1em 3em 3em 0 );
+    }
+
+    .hands__title{
+        @include color(#000);
+        font-size: $text-medium;
+        font-family: $font-principal;
+        font-weight: $bold;
+        margin-bottom: 1em;
+        margin-top: 4em;
+        
+        
+    }
+
+    .middle__flex{
+        margin-top: 7em;
     }
 
 }
