@@ -858,6 +858,7 @@ ul.show{
     }
     .foot__img img{
         width: 325px;
+        
     }
 
     .main__hands{
@@ -1001,7 +1002,7 @@ ul.show{
         font-family: $font-principal;
         font-weight: $bold;
         margin-bottom: 1em;
-        margin-top: 4em;
+        margin-top: 1em;
         
         
     }
@@ -1056,4 +1057,18 @@ ul.show{
     
 
     
+}
+
+
+@media screen and (min-width: 571px) and (max-width:859px){
+
+    .menu{
+        @include flex;
+        @include medidas(100%, 40px);
+        @include fondo(#ffffff);
+        border-bottom: 1px solid rgb(0, 0, 0);
+        box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+        position: fixed;
+        
+    }
 }

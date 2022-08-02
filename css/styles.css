@@ -793,7 +793,7 @@ ul.show {
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
     margin-bottom: 1em;
-    margin-top: 4em;
+    margin-top: 1em;
   }
   .middle__flex {
     margin: 9em 0 9em 0;
@@ -834,6 +834,19 @@ ul.show {
 @media screen and (max-width: 350px) {
   label.logo {
     font-size: 18px;
+  }
+}
+@media screen and (min-width: 571px) and (max-width: 859px) {
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: #ffffff;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.6);
+    position: fixed;
   }
 }
 
