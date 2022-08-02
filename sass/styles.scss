@@ -1007,15 +1007,17 @@ ul.show{
     }
 
     .middle__flex{
-        margin-top: 7em;
+        margin: 9em 0 9em 0;
+        
     }
     .menu{
         @include flex;
-        @include medidas(100%, 100px);
+        @include medidas(100%, 40px);
         @include fondo(#ffffff);
         border-bottom: 1px solid rgb(0, 0, 0);
         box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
         position: fixed;
+        
         
     }
 
@@ -1041,6 +1043,7 @@ ul.show{
         position: fixed;
         
     }
+    
 }
 
 
