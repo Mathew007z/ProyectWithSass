@@ -153,6 +153,7 @@ body{
     @include fondo(#ffffff);
     border-bottom: 1px solid rgb(0, 0, 0);
     box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+    
 }
 
 .menu img{
@@ -1007,6 +1008,15 @@ ul.show{
     .middle__flex{
         margin-top: 7em;
     }
+    .menu{
+        @include flex;
+        @include medidas(100%, 100px);
+        @include fondo(#ffffff);
+        border-bottom: 1px solid rgb(0, 0, 0);
+        box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+        position: fixed;
+        
+    }
 
 }
 
@@ -1020,6 +1030,15 @@ ul.show{
     .menu__items{
         overflow: scroll;
         height: calc(100% - 65px);
+    }
+    .menu{
+        @include flex;
+        @include medidas(100%, 100px);
+        @include fondo(#ffffff);
+        border-bottom: 1px solid rgb(0, 0, 0);
+        box-shadow: 5px 0 10px rgba(0, 0, 0, .6);
+        position: fixed;
+        
     }
 }
 
