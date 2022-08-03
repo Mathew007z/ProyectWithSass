@@ -136,6 +136,11 @@ ul.show {
   margin-top: 5em;
 }
 
+@keyframes mover {
+  0% {
+    transform: translate(100%);
+  }
+}
 .middle__flex2 {
   display: flex;
   flex-direction: column;
